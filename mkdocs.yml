@@ -1,0 +1,6 @@
+docs_dir: doc
+site_name: 'blitzy-postgres'
+nav:
+  - Home: index.md
+plugins:
+  - techdocs-core
