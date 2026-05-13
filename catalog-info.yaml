@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: blitzy-postgres
+  description: the mirror of the official PostgreSQL GIT repository. Note that this
+    is just a *mirror* - we don't work with pull requests on github. To contribute,
+    please see https://wiki.postgresql.org/wiki/Submitting_a_Patch
+  tags:
+  - c
+  annotations:
+    github.com/project-slug: Blitzy-Sandbox/blitzy-postgres
+    backstage.io/source-location: url:https://github.com/Blitzy-Sandbox/blitzy-postgres/tree/master/
+    backstage.io/techdocs-ref: dir:.
+  labels:
+    blitzy.com/language: c
+spec:
+  type: service
+  lifecycle: production
+  owner: blitzy-sandbox
+  system: blitzy-c-cpp
